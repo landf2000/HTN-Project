@@ -23,6 +23,8 @@ namespace Game
 		GameEngine::Entity* m_player;
 
 		void CreateObstacle();
+
+		void CreateBackground();
 	};
 
 }

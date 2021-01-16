@@ -15,6 +15,7 @@ namespace GameEngine
 			PlatformLeft,
 			PlatformCenter,
 			PlatformRight,
+			Background,
 			Count,
 		};
 	}	
@@ -27,6 +28,7 @@ namespace GameEngine
 		case eTexture::PlatformLeft: return "platform-left.png";
 		case eTexture::PlatformCenter: return "platform-center.png";
 		case eTexture::PlatformRight: return "platform-right.png";
+		case eTexture::Background: return "bg.png";
 		}
 		return "UnknownTextType";
 	}
