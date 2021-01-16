@@ -60,10 +60,13 @@ void PlayerMovementComponent::Update()
         displacement.x += inputAmount * dt;
     }
 
-    if (sf::Keyboard::isKeyPressed(sf::Keyboard::Space))
+    if (sf::Keyboard::isKeyPressed(sf::Keyboard::Up))
     {
-        displacement.x -= inputAmount * dt;
+
+        displacement.y -= gravity * dt * 100 * 2;
     }
+
+
 
     //Update the entity position
     GetEntity()->SetPos(GetEntity()->GetPos() + displacement); 
