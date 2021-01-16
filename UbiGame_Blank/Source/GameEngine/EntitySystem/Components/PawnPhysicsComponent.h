@@ -5,8 +5,8 @@
 class PawnPhysicsComponent : public GameEngine::CollidablePhysicsComponent
 {
 public:
-	PawnPhysicsComponent();
-	~PawnPhysicsComponent();
+	//PawnPhysicsComponent();
+	//~PawnPhysicsComponent();
 
 	virtual void OnAddToWorld() override;
 	virtual void Update() override;
