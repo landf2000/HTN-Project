@@ -39,9 +39,9 @@ void GameBoard::CreatePlayer()
 
 	
 
-	m_player->AddComponent<PawnPhysicsComponent>();
+	//m_player->AddComponent<PawnPhysicsComponent>();
 
-	//m_player->AddComponent<GameEngine::CollidablePhysicsComponent>();
+	m_player->AddComponent<GameEngine::CollidablePhysicsComponent>();
 }
 
 void GameBoard::CreateObstacle()

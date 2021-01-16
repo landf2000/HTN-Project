@@ -20,6 +20,7 @@ void PlayerMovementComponent::Update()
     //Grabs how much time has passed since last frame
     const float dt = GameEngine::GameEngineMain::GetTimeDelta();
 
+    /*
     sf::Vector2f wantedVelocity = sf::Vector2f(0.f, 0.f);
 
     if (sf::Keyboard::isKeyPressed(sf::Keyboard::Left))
@@ -38,7 +39,7 @@ void PlayerMovementComponent::Update()
         pawnPhys->SetVelocity(wantedVelocity);
     }
 
-    /*
+    */
 
     //By default the displacement is 0,0
     sf::Vector2f displacement{ 0.0f,0.0f };
@@ -67,7 +68,7 @@ void PlayerMovementComponent::Update()
     //Update the entity position
     GetEntity()->SetPos(GetEntity()->GetPos() + displacement); 
 
-    */
+    
 }
 
 void PlayerMovementComponent::OnAddToWorld() {}
