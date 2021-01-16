@@ -205,6 +205,14 @@ XCOPY "$(SolutionDir)..\SFML-2.5.0\bin" "$(TargetDir)" /S /Y /I</Command>
     <ClInclude Include="Source\GameEngine\Util\TextureManager.h" />
     <ClInclude Include="Source\GameEngine\EntitySystem\Components\SpriteRenderComponent.h" />
   </ItemGroup>
+  <ItemGroup>
+    <Image Include="Resources\bg.png" />
+    <Image Include="Resources\carrot.png" />
+    <Image Include="Resources\platform-center.png" />
+    <Image Include="Resources\platform-left.png" />
+    <Image Include="Resources\platform-right.png" />
+    <Image Include="Resources\player.png" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

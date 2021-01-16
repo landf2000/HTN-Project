@@ -138,4 +138,24 @@
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
+  <ItemGroup>
+    <Image Include="Resources\bg.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\carrot.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\platform-center.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\platform-left.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\platform-right.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\player.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
 </Project>

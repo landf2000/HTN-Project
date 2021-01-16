@@ -11,8 +11,6 @@ namespace GameEngine
 		enum type
 		{
 			None = -1,
-
-			AddYourTexturesEnumerationsHere, // Replace this for your own enumerations
 			Player,
 			Count,
 		};
