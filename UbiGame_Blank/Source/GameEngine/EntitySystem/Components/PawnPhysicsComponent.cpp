@@ -18,3 +18,5 @@ void PawnPhysicsComponent::Update()
 
 	__super::Update();
 }
+
+void PawnPhysicsComponent::OnAddToWorld() {}
