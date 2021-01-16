@@ -12,6 +12,9 @@ namespace GameEngine
 		{
 			None = -1,
 			Player,
+			PlatformLeft,
+			PlatformCenter,
+			PlatformRight,
 			Count,
 		};
 	}	
@@ -21,6 +24,9 @@ namespace GameEngine
 		switch (texture)
 		{
 		case eTexture::Player: return "player.png";
+		case eTexture::PlatformLeft: return "platform-left.png";
+		case eTexture::PlatformCenter: return "platform-center.png";
+		case eTexture::PlatformRight: return "platform-right.png";
 		}
 		return "UnknownTextType";
 	}
