@@ -16,6 +16,9 @@
     <Filter Include="Source Files\GameEngine">
       <UniqueIdentifier>{142392d3-07ff-4296-ac90-43d6e7a6f943}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Resource Files\img">
+      <UniqueIdentifier>{56074f29-7678-4d8f-8f18-a069d8f26ad2}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Source\GameEngine\GameEngineMain.cpp">
