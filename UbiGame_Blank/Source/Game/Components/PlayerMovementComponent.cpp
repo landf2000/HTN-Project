@@ -6,6 +6,8 @@
 
 using namespace Game;
 
+const float gravity = 5.0f;
+
 void PlayerMovementComponent::Update() 
 {
        
@@ -19,6 +21,9 @@ void PlayerMovementComponent::Update()
 
     //The amount of speed that we will apply when input is received
     const float inputAmount = 100.0f;
+
+    //Gravity
+    displacement.y += gravity * dt * 100;
 
     if (sf::Keyboard::isKeyPressed(sf::Keyboard::Left))
     {
