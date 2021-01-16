@@ -13,14 +13,18 @@ namespace GameEngine
 			None = -1,
 
 			AddYourTexturesEnumerationsHere, // Replace this for your own enumerations
-
+			Player,
 			Count,
 		};
 	}	
 
 	inline const char* GetPath(eTexture::type texture)
 	{
-		return "UnknownTexType";
+		switch (texture)
+		{
+		case eTexture::Player: return "player.png";
+		}
+		return "UnknownTextType";
 	}
 
 	class TextureManager
