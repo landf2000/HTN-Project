@@ -3,7 +3,6 @@
 #include "GameEngine/GameEngineMain.h"
 
 #include "GameEngine/EntitySystem/Components/CollidablePhysicsComponent.h"
-#include "GameEngine/EntitySystem/Components/PawnPhysicsComponent.h"
 
 #include "Game/Components/PlayerMovementComponent.h"
 
@@ -35,9 +34,7 @@ void GameBoard::CreatePlayer()
 	//Movement
 	m_player->AddComponent<Game::PlayerMovementComponent>();  // <-- Added the movement component to the player
 
-	m_player->AddComponent<PawnPhysicsComponent>();
-
-	//m_player->AddComponent<GameEngine::CollidablePhysicsComponent>();
+	m_player->AddComponent<GameEngine::CollidablePhysicsComponent>();
 }
 
 void GameBoard::CreateObstacle()
