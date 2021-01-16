@@ -163,5 +163,8 @@
     <Image Include="Resources\player.png">
       <Filter>Resource Files</Filter>
     </Image>
+    <Image Include="Resources\img\bg.png">
+      <Filter>Resource Files</Filter>
+    </Image>
   </ItemGroup>
 </Project>

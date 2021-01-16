@@ -17,6 +17,7 @@ GameBoard::GameBoard()
 {
 	CreatePlayer(); 
 	CreateObstacle();
+	CreateBackground();
 }
 
 void GameBoard::CreatePlayer()
@@ -95,6 +96,22 @@ void GameBoard::CreateObstacle()
 
 	platformRight->AddComponent<GameEngine::CollidableComponent>();
 	
+}
+
+void GameBoard::CreateBackground()
+{
+	GameEngine::Entity* background = new GameEngine::Entity();
+	GameEngine::GameEngineMain::GetInstance()->AddEntity(background);
+
+	background->SetPos(sf::Vector2f(250.0f, 250.0f));
+	background->SetSize(sf::Vector2f(500.0f, 500.0f));
+
+	// Render
+	GameEngine::SpriteRenderComponent* render = background->AddComponent<GameEngine::SpriteRenderComponent>();
+
+	render->SetFillColor(sf::Color::Transparent);
+	render->SetTexture(GameEngine::eTexture::Background);  // <-- Assign the texture to this entity
+	render->SetZLevel(-1);
 }
 
 
